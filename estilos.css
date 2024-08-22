@@ -1,0 +1,11 @@
+@charset "u tf8";
+/*CSS Document*/
+body {
+    font-family: macho; sans-serif;
+    background-color: #951c67;
+    color: #fcf5f9;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
