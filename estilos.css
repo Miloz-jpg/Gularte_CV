@@ -13,12 +13,12 @@ html{
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* es raro establecer un ancho máximo con un número relativo (porcentaje), o es widt al 100% o es un max-width fijo, y guarda que te afecta a todas las img, esto debería ir en cada caso específico */
+    height: auto; /* no hace falta definirlo porque se ajusta a la altura*/
 }
 
 footer {
-    text-decoration: none;
+    text-decoration: none; /* fijate de aplicar esto directamente a las a porque acá no hace nada  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,27 +27,27 @@ footer {
 }
 
 body {
-    font-family: "macho", sans-serif;
+    font-family: "macho", sans-serif; /* repetido */
     background-color: #951c67;
-    color: #fcf5f9;
+    color: #fcf5f9; /* repetido */
 }
 
 header {
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: center; /* no hace nada */
     padding: 20px;
     background-color:#621244
 }
 
-header {
+header { /* no se repiten selectores! y guarda que se pisan los paddings */
     flex-wrap: wrap;
     padding: 10px;
 }
 
 .nav-botonera {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* no hace nada */
     align-items: center;
 }
 
@@ -57,7 +57,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Me da espacio entre los botones */
+    margin-left: 20px; /* Me da espacio entre los botones */ /* esto es mejor con gap */
     border-radius: 15px;
     background-color: #951c67;
 }
@@ -85,8 +85,8 @@ nav ul li {
 }
 .seccion-1 img{
     width: 100%; 
-    height: auto;
-    object-fit: cover; 
+    height: auto; /* no hace falta */
+    object-fit: cover; /* no hace nada */
 }
 
 h1{
@@ -107,11 +107,11 @@ img.fotoperfil:hover {
 }
 #sobre-mí{
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
+    flex-direction: row; /* no hace falta */
+    justify-content:space-evenly; /* podés tener más control del espacio entre los objetos con un gap porque si tenemos una pantalla más grande el espacio entre los objetos va a ser enorme*/
     align-items: center;
-    padding: 5%;
-    margin-top: 8%;
+    padding: 5%; /* no se centra con paddings!!! */
+    margin-top: 8%; /*capaz podés probar con vh*/
 }
 
 #sobre-mí p{
@@ -121,10 +121,10 @@ img.fotoperfil:hover {
 
 #educacion{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* no hace falta */
     justify-content:space-evenly;
     align-items: center;
-    padding: 5%;
+    padding: 5%; /* no se centra con padding!! */
 }
 
 #educacion p{
