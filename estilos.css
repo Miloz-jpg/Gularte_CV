@@ -6,63 +6,38 @@ html{
 }
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: "macho", sans-serif;
-    color: #fcf5f9;
+    list-style:disc;
+    padding: 0;
+    margin: 0;
 }
 
-img {
-    max-width: 100%; /* es raro establecer un ancho máximo con un número relativo (porcentaje), o es widt al 100% o es un max-width fijo, y guarda que te afecta a todas las img, esto debería ir en cada caso específico */
-    height: auto; /* no hace falta definirlo porque se ajusta a la altura*/
+body{
+    cursor: url(img/cursorpersonalizado.png),auto;
 }
 
-footer {
-    text-decoration: none; /* fijate de aplicar esto directamente a las a porque acá no hace nada  */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #621244;
-}
-
-body {
-    font-family: "macho", sans-serif; /* repetido */
-    background-color: #951c67;
-    color: #fcf5f9; /* repetido */
+a{
+    cursor: url(img/cursorpersonalizado.png),auto;
 }
 
 header {
+    height: 150px;
     display: flex;
     justify-content: space-between; 
-    align-items: center; /* no hace nada */
     padding: 20px;
-    background-color:#621244
-}
-
-header { /* no se repiten selectores! y guarda que se pisan los paddings */
+    background: #621244;
     flex-wrap: wrap;
-    padding: 10px;
+    color: #fcf5f9;
 }
 
 .nav-botonera {
     display: flex;
-    justify-content: flex-end; /* no hace nada */
     align-items: center;
+    gap: 40px;
+    justify-content: space-around;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px; /* Me da espacio entre los botones */ /* esto es mejor con gap */
-    border-radius: 15px;
-    background-color: #951c67;
-}
-
-.botonera a {
+.nav-botonera a {
     font-family: "macho", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -70,23 +45,23 @@ nav ul li {
     color: #fcf5f9;
     padding: 10px 20px;
     display: block;
+    border-radius: 15px;
+    background-color: #951c67;
+    font-size: 20px
 }
-
-.botonera a:hover {
+.nav-botonera a:hover {
     color: #951c67;
     background-color: #f376a8;
     border-radius: 15px;
 }
 
-.seccion-1{
+.bienvenida{
     display: flex;
     width: 100%;
     align-items: center;
 }
-.seccion-1 img{
+.bienvenida img{
     width: 100%; 
-    height: auto; /* no hace falta */
-    object-fit: cover; /* no hace nada */
 }
 
 h1{
@@ -105,29 +80,185 @@ img.fotoperfil {
 img.fotoperfil:hover {
     transform: scale(1.1);
 }
-#sobre-mí{
+
+#sobre-mí {
+    color: #fcf5f9;
+    width: 1920px;
+    height: 100vh;
     display: flex;
-    flex-direction: row; /* no hace falta */
-    justify-content:space-evenly; /* podés tener más control del espacio entre los objetos con un gap porque si tenemos una pantalla más grande el espacio entre los objetos va a ser enorme*/
+    gap: 50px;
     align-items: center;
-    padding: 5%; /* no se centra con paddings!!! */
-    margin-top: 8%; /*capaz podés probar con vh*/
+    justify-content: center;
+    padding: 5%;
+    background: linear-gradient(180deg, #81185A 0%, #4D0A34 100%);
 }
+
 
 #sobre-mí p{
     font-size: 18px;
     max-width: 600px;
 }
 
-#educacion{
-    display: flex;
-    flex-direction: row; /* no hace falta */
-    justify-content:space-evenly;
-    align-items: center;
-    padding: 5%; /* no se centra con padding!! */
+.ilustracion-personal{
+    position: relative;
+    right: 31px;
+    top: 20px;
 }
 
-#educacion p{
+#educacion-personalidad {
+    display: flex;
+    background-color: #FFF2FC;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5%;
+    font-size: 20px;
+    gap: 50px;
+}
+
+#educacion-personalidad .columna1 {
+    width: 35%; 
+    color: #4D0A34;
+}
+
+#educacion-personalidad .columna2 {
+    width: 35%; 
+    color: #4D0A34;
+}
+
+#educacion-personalidad h4 {
+    color: #621244;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#educacion-personalidad ul {
+    padding-left: 0;
+}
+
+#educacion-personalidad ul li {
+    margin-bottom: 10px;
+}
+
+#educacion-personalidad p {
+    margin-top: 15px;
+}
+
+.adobepack {
+    display: flex;
+    justify-content: flex-start;
+    margin-top:10px;
+    gap: 10px;
+}
+
+.adobepack img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+
+h3{
+    font-size: 50px;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+#proyectos {
+    text-align: center;
+    color: #FDF2FA;
+    height: 100vh;
+    background: linear-gradient(180deg, #81185A 0%, #4D0A34 100%);
+    padding: 20px;
+}
+
+.proyecto-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.proyecto {
+    position: relative;
+    width: 500px;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.proyecto p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.proyecto:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.proyecto:hover {
+    transform: scale(1.1);
+}
+
+#contacto{
+    color: #4D0A34;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 4%;
+    background: #FFF2FC;
+}
+
+
+#contacto h3 {
+    text-align:start;
+    margin-bottom: 10px;
+}
+
+#contacto p{
     font-size: 18px;
     max-width: 600px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #621244;
+    color: #fcf5f9;
+    text-align: center;
+}
+
+footer p{
+    margin: 5px 0;
+    flex-basis: 100%; /*cada párrafo ocupe una línea completa */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }

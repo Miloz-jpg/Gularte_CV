@@ -16,21 +16,19 @@
             <img src="img/miloz.svg" width="65%" alt="logo-de-botonera">
         </div>
         <nav class="nav-botonera">
-            <ul class="botonera"> <!-- fijate de usar las a dentro de nav directo, sin ul/li -->
-                <li><a href="#sobre-mí">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <a href="#sobre-mí">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section class="seccion-1"> <!--está bueno que los nombres de clases sean más descriptivos de una sección, capaz un nombre mejor podría ser "bienvenida" o algo así-->
-            <img src="img/PortadaAlien.jpg" alt="banner"> <!-- los archivos no llevan mayúsculas!!! -->
+        <section class="bienvenida">
+            <img src="img/bienvenidx.jpg" alt="banner">
         </section>
         <section id="sobre-mí">
             <img src="img/perfil.jpg" class="fotoperfil" width="600px" height="600px">
-            <div> <!-- esto podría ser otra etiqueta -->
+            <article>
                 <h1>Hola! Soy Milo ;) </h1>
                 <p>Mi nombre es Milagros Gularte pero támbien me dicen Milo. Soy de Buenos Aires, Argentina, desde
                     muy temprana edad me interesaron
@@ -43,26 +41,16 @@
                 <p>En cada proyecto trabajo de forma minuciosa, creo fielmente en el uso de herramientas analógicas como
                     primer instancia de diseño y me gusta llevarme algo aprendido de cada proceso creativo que conlleven
                     dichos proyectos.</p>
-            </div>
+            </article>
         </section>
 
-        <section id="educacion">
-            <div> 
+        <section id="educacion-personalidad">
+            <div class="columna1">
                 <h4>Educación</h4>
                 <ul>
                     <li>Bachiller en Comunicación - EENS N°2 "A.Bourras" (2016)</li>
                     <li>Lic. en Diseño y Comunicación Visual - UNLa (2020-Actualidad)</li>
                 </ul>
-            </div>
-            <div>
-                <h4>Cursos</h4>
-                <ul>
-                    <li>Dibujo y pintura - UNLa</li>
-                    <li>Diseño de infografías con Manuel Bortoletti - Domestika</li>
-                    <li>Ilustración y lettering para diseño de packaging con Emi Renzi - Domestika</li>
-                </ul>
-            </div>
-            <div>
                 <h4>Idiomas</h4>
                 <ul>
                     <li>Español: Oral y escrito // Nativo</li>
@@ -70,54 +58,64 @@
                     <li>Italiano: Escrito // Inicial</li>
                 </ul>
             </div>
-        </section>
-
-        <section id="personalidad">
-            <div>
-                <h4>Habilidades</h4>
-                <p>Paquete Adobe (Ai-Ps-Id)</p>
-                <p>Ilustración</p>
+            <div class="ilustracion-personal">
+                <img class="ilustracion-personal" src="img/milozilustracion.png"> 
             </div>
-        </section>
+            <div class="columna2">
+                <h4>Cursos</h4>
+                <ul>
+                    <li>Dibujo y pintura - UNLa</li>
+                    <li>Diseño de infografías con Manuel Bortoletti - Domestika</li>
+                    <li>Ilustración y lettering para diseño de packaging con Emi Renzi - Domestika</li>
+                </ul>
 
-        <section>
-            <div>
-                <h4>Aptitudes</h4> <!-- esta parte podría estar en la sección anterior, y para evitar el uso de divs podrías pensar en otra etiqueta -->
+                <h4>Aptitudes y Herramientas</h4>
                 <p>Resolución de problemas, liderazgo, trabajo en equipo, adaptabilidad estética.</p>
+                <ul class="adobepack">
+                    <img src="img/adobe-illustrator.png">
+                    <img src="img/adobe-photoshop .png">
+                    <img src="img/adobe-indesign.png">
+                </ul>
             </div>
         </section>
+
 
         <section id="proyectos">
-            <div>
-                <h3>Proyectos</h3>
-                <h4>Branding</h4>
-                <img src="img/MockupLatas.jpg" width="500px" height="375px">
-                <img src="img/Ilustraciones y fondos LATAS-03.jpg" width="700px" height="375px">
-        </div>
-        <div>
-            <h4>Lettering</h4>
-            <img src="img/Hey!lettering.jpg" width="529px" height="375px">
-            <img src="img/Lettering Pasteleria.jpg" width="500px" height="375px">
-            <img src="img/AficheGanache.jpg" width="566px" height="375px">
-        </div>
-        <div>
-            <h4>Ilustración</h4>
-            <img src="img/Obelisco-182.png" width="500" height="707">
-        </div>
+            <h3>Proyectos</h3>
+            <div class="proyecto-container">
+                <div class="proyecto">
+                    <p>Lettering</p>
+                    <img src="img/proyectolettering.jpg">
+                </div>
+                <div class="proyecto">
+                    <p>Branding</p>
+                    <img src="img/proyectobranding.jpg">
+                </div>
+                <div class="proyecto">
+                    <p>Ilustración</p>
+                    <img src="img/proyectoilustracion.jpg">
+                </div>
+            </div>
         </section>
-
         <section id="contacto">
-        <div>
-            <h3>Trabajemos juntxs!</h3> <!-- agregar tu información de contacto o un formulario? -->
-            <!-- todavía no vimos formularios!! más adelante sí, hay una etiqueta que se llama adress que sirve para juntar info de contacto -->
-        </div>
+            <img src="img/milozilustracionmail.png"> 
+            <div class="contacto-container">
+                <h3>Trabajemos juntxs!</h3>
+                <p>Contame tus ideas y propuestas para que podamos darle vida. No dudes en contactarme! :)</p>
+                <p>milagrosgularte99@gmail.com</p>
+                <p>+542224447515</p>
+                <p>Buenos Aires, Argentina.</p>
+            </div>
         </section>
     </main>
     <footer>
+        <img src="img/miloz.svg" width="5%">
         <p>Todos los derechos reservados. Copyright © 2024 Miloz</p>
-        <a href="https://www.behance.net/milagrosgularte" target="_blank">Behance</a>
-        <a href="https://www.instagram.com/miloz.jpg/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/milagros-gularte-017780228/" target="_blank">LinkedIn</a>
+        <div class="social-icons">
+            <a href="https://www.behance.net/milagrosgularte" target="_blank"> <img src="img/behance-icon.png"></a>
+            <a href="https://www.instagram.com/miloz.jpg/" target="_blank"> <img src="img/instagram-icon.png"></a>
+            <a href="https://www.linkedin.com/in/milagros-gularte-017780228/" target="_blank"><img src="img/linkedin-icon.png"></a>
+        </div>
     </footer>
 </body>
 
