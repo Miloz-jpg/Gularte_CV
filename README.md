@@ -3,3 +3,5 @@ Voy a dejar el link de mi prototipo en figma para ser mas especifica:  https://w
 
 En la parte de contacto no sé como aplicar las variables y los saltos de linea, recuerdo que algo en clase se menciono pero entre tantas etiquetas me maree :(
 en esa sección tendría que usar <adress> ? No sé bien como aplicarla
+
+Creo que el cursor me quedo medio grande, lo voy a ajustar!
