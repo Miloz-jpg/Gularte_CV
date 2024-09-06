@@ -6,3 +6,5 @@ Trate de hacer un diseño moderno y carismatico, que sea claro y organizado a la
 Link Prototipo Figma: https://www.figma.com/design/HZl23E4nh4GgbamXBvQOlt/Milo-1?node-id=0-1&t=7xCuE3ASS2KinyaC-1
 
 Tamaño de pantalla: 1920 x 1080 px
+
+El editor usado es Visual Studio Code
