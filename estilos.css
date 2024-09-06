@@ -21,7 +21,6 @@ a{
 }
 
 header {
-    height: 150px; /* es importante que el tamaño de las cosas esté dado por su contenido y por los paddings establecidos, y a nivel ajuste de diseño está visualmente muy grande */
     display: flex;
     justify-content: space-between; 
     padding: 20px;
@@ -34,17 +33,13 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
-    justify-content: space-around; /* no está haciendo nada porque el espacio intermedio estpa dado por el gap*/
 }
 
 .nav-botonera a {
-    font-family: "macho", sans-serif; /* repetido */
     font-weight: 700;
-    font-style: normal; /* no hace nada */
     text-decoration: none;
     color: #fcf5f9;
     padding: 10px 20px;
-    display: block; /* mmmm  muy dudoso esto */
     border-radius: 15px;
     background-color: #951c67;
     font-size: 20px
@@ -65,11 +60,11 @@ header {
 }
 
 h1{
-    font-weight: 700; /* no hace nada */
     font-style: italic;
     font-size: 50px;
     margin-bottom: 5%;
 }
+
 img.fotoperfil {
     border: 10px solid #621244; /* Cambia el color y el grosor del borde */
     border-radius: 50px;
@@ -83,13 +78,11 @@ img.fotoperfil:hover {
 
 #sobre-mí {
     color: #fcf5f9;
-    width: 1920px; /* no se usan anchos fijos!!! esto te está generando scroll horizontal */
     height: 100vh;
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
-    padding: 5%; /* esto te está sumando tamaño al alto que no corresponden, además no van en porcentajes */
     background: linear-gradient(180deg, #81185A 0%, #4D0A34 100%);
 }
 
@@ -105,48 +98,36 @@ img.fotoperfil:hover {
     top: 20px;
 }
 
-#educacion-personalidad {
+#educacion-personalidad{
+    gap: 90px;
     display: flex;
-    background-color: #FFF2FC;
-    justify-content: space-evenly;
+    background-color:#FFF2FC;
+    justify-content: center;
     align-items: flex-start;
     padding: 5%;
     font-size: 20px;
-    gap: 50px;
+    background-image: url('img/milozilustracion.png'); 
+    background-repeat: no-repeat; 
+    background-position: 37% bottom;
 }
 
-#educacion-personalidad .columna1 {
-    width: 35%; /* guarda que en pantallas más chicas este porcentaje te va a jugar en contra, mejor max-width*/
-    color: #4D0A34;
-}
-
-#educacion-personalidad .columna2 { /* si esto es igual a la columna 1 es mejor establecer los dos en un mismo lugar o ponerles la misma class */ 
-    width: 35%; 
+#educacion-personalidad .columna{
     color: #4D0A34;
 }
 
 #educacion-personalidad h4 {
-    color: #621244; /* repetido */
     font-size: 24px;
     margin-bottom: 15px;
-}
-
-#educacion-personalidad ul {
-    padding-left: 0; /* repetido */
 }
 
 #educacion-personalidad ul li {
     margin-bottom: 10px;
 }
 
-#educacion-personalidad p {
-    margin-top: 15px; /* no hace nada */
-}
-
 .adobepack {
     display: flex;
     justify-content: flex-start;
-    margin-top:10px;
+    margin-top:15px;
     gap: 10px;
 }
 
@@ -178,22 +159,19 @@ h4{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px; /* o usamos space arround o gap pero no los dos*/
 }
 
 .proyecto {
-    position: relative; /* MMMM muy dudoso */
-    width: 500px; /* no hace nada */
     transition: transform 0.3s ease;
     border-radius: 15px;
-    overflow: hidden; /* por ahora no está haciendo nada pero no sé si lo pensás para otra cosa */
 }
 
 .proyecto img {
+    margin-top: 40px;
     width: 100%;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .proyecto p {
@@ -204,7 +182,6 @@ h4{
 
 .proyecto:hover img {
     transform: scale(1.1);
-    opacity: 0.8;
     border-radius: 20px;
 }
 
@@ -215,7 +192,7 @@ h4{
 #contacto{
     color: #4D0A34;
     display: flex;
-    gap: 50px;
+    gap: 70px;
     justify-content: center;
     padding: 4%;
     background: #FFF2FC;
@@ -228,28 +205,67 @@ h4{
 }
 
 #contacto p{
-    font-size: 18px;
+    font-size: 24px;
     max-width: 600px;
+}
+
+.texto-destacado {
+    font-size: 45px;
+    font-weight: bold;
+    color: #621244; 
+    line-height: 155.847%
+}
+
+p.texto-destacado{
+    margin-top: 30px;
+}
+
+address{
+    margin-top: 30px;
+}
+address p {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+#contacto .contacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contacto address {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-item img.icono {
+    width: 24px;
+    height: 24px;
 }
 
 footer {
     display: flex;
-    justify-content: space-between; /* no hace nada */
     align-items: center;
     padding: 20px;
     background-color: #621244;
     color: #fcf5f9;
-    text-align: center;
+    text-align: justify;
+    gap: 50px;
 }
 
 footer p{
-    margin: 5px 0; /* no hace nada */
     flex-basis: 100%; /*cada párrafo ocupe una línea completa */
 }
 
 .social-icons {
     display: flex;
-    justify-content: center; /* no hace nada */
     gap: 20px;
 }
 
